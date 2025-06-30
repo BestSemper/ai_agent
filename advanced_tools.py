@@ -29,4 +29,4 @@ def capture_image() -> str:
         cv2.destroyAllWindows()
     return "Image captured and saved as 'captured_image.jpg'"
 
-capture_image.func()
+# capture_image.func()
