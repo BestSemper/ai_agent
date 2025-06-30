@@ -2,3 +2,4 @@ venv
 chroma_db
 .DS_Store
 .env
+captured_image.jpg
