@@ -21,6 +21,27 @@ def exponentiate(x: float, y: float) -> float:
     """Raise x to the power of y."""
     return x ** y
 
+@tool
+def differentiate(expression: str, variable: str) -> str:
+    """Differentiate the expression with respect to the variable."""
+    from sympy import symbols, diff
+    x = symbols(variable)
+    return str(diff(expression, x))
+
+@tool
+def integrate(expression: str, variable: str) -> str:
+    """Integrate the expression with respect to the variable."""
+    from sympy import symbols, integrate
+    x = symbols(variable)
+    return str(integrate(expression, x))
+
+@tool
+def solve_equation(equation: str, variable: str) -> str:
+    """Solve the equation for the variable."""
+    from sympy import symbols, solve
+    x = symbols(variable)
+    return str(solve(equation, x))
+
 # print(add)
 # print(add.args_schema.model_json_schema())
 
